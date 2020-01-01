@@ -1,0 +1,29 @@
+<body>
+    <style>
+        table, th, td {border: 1px solid white;border-collapse: collapse;}
+    
+        th, td {padding: 5px;text-align: left;}
+    
+        .imgCenter {display: block;margin-left: auto;margin-right: auto;width: 40%;}                  
+    
+        .centerText { text-align: center}
+        .rightText { text-align: right}
+        .boldText {font-weight: bold;}
+        </style>    
+    
+    <img class="imgCenter" src='static/icons/logoisa.png'/> 
+    <h1 class="centerText">Institucion Educativa Isabel La Catolica</h1> 
+    <h2 class="centerText boldText">Citación</h2> 
+    <br>
+    <br>
+    <table style="">
+        <tr><td><strong>Monteria,  </strong>${this.fecha}</td></tr>
+        <tr><td><strong>Señor(a):  </strong>${this.acu}</td></tr>
+        <tr><td><strong>La institucion requiere su presencia el dia: </strong>${this.fecha}</td><td><strong>Hora: </strong></td><td>${this.hora}</td></tr>
+        <tr><td> <strong>Para tratar conjuntamente aspectos sobre disciplina de su hijo(a)  </strong>${this.nombre}</td><td><strong>del grado:</strong></td><td>${this.nivel}</td></tr>
+
+    </table>
+          
+</body>
+
+
