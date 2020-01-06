@@ -11,8 +11,8 @@ import 'vue-search-select/dist/VueSearchSelect.css'
 Vue.use(BootstrapVue)
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faPrint,faPlus } from '@fortawesome/free-solid-svg-icons'
-library.add(faPrint,faPlus)
+import { faPrint,faPlus,faFileCsv } from '@fortawesome/free-solid-svg-icons'
+library.add(faPrint,faPlus,faFileCsv)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false

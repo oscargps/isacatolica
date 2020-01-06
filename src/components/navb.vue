@@ -47,6 +47,9 @@
         </li>
       </ul>
       <b-dropdown :text="user" variant="link" class="">
+        <b-dropdown-item>
+          <router-link to="/options" class="dropdown-item">Opciones</router-link>
+        </b-dropdown-item>
           <b-dropdown-item>
               <b-button @click="logout()" variant="link">Cerrar sesión</b-button>
             </b-dropdown-item>

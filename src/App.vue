@@ -8,11 +8,13 @@
           <h3>Bienvenido</h3>
         </div>
         <div class="card-body">
+          <form  v-on:keyup.enter="login()">
           <input type="text" class="form-control" placeholder="Usuario" v-model.trim="form.user">
           <hr>
           <input type="password" class="form-control" placeholder="Contraseña" v-model.trim="form.pw">
           <hr>
           <b-button @click="login()" variant="success" class="btn-block">Ingresar</b-button>
+          </form>
         </div>
       </div>
     </div>

@@ -9,6 +9,7 @@ import newcitacion from '@/components/newcitacion'
 import citaciones from '@/components/citaciones'
 import newcompromiso from '@/components/newcompromiso'
 import compromisos from '@/components/compromisos'
+import options from '@/components/options'
 
 Vue.use(Router)
 
@@ -59,6 +60,11 @@ export default new Router({
       path: '/compromisos',
       name: 'compromisos',
       component: compromisos
+    },
+    {
+      path: '/options',
+      name: 'options',
+      component: options
     }
 
   ]
