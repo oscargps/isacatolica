@@ -66,16 +66,12 @@
             .then(response => {
               let resp = response.data
               let res = resp.split('-')
-              console.log(resp);
-              console.log(res);
               if (res[1] == 'true') {
                 localStorage.setItem('Usuario', res[0])
                 localStorage.setItem('idUser', res[2])
                 this.verif()
               } else {
-
                 swal("Usuario o Clave incorrecto", "", "error");
-
               }
             })
             .catch(error => {

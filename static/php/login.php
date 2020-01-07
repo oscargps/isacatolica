@@ -23,5 +23,5 @@ if($pw==$row[1]){
     $_SESSION['docente'] = $row[3];
     echo $row[3].'-true-'.$row[2];
 }else{
-  echo 'false';
+  echo '-false-';
 }
