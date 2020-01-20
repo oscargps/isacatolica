@@ -120,7 +120,7 @@
             
         th, td {padding: 5px;text-align: left;}
         .sign{border-top:1pt solid black;}
-        .imgCenter {display: block;margin-left: auto;margin-right: auto;width: 40%;}                  
+        .imgCenter {display: block;margin-left: auto;margin-right: auto;width: 82px; height:75px}                  
     
         .centerText { text-align: center}
         .rightText { text-align: right}
