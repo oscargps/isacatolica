@@ -65,6 +65,7 @@
             .post(url, formData)
             .then(response => {
               let resp = response.data
+              console.log(resp);
               let res = resp.split('-')
               if (res[1] == 'true') {
                 localStorage.setItem('Usuario', res[0])

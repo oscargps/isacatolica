@@ -102,7 +102,7 @@
         </div>
         <div class="card-footer">
 
-          <b-button size="lg"variant="success" @click="listado = !listado">Ok</b-button>
+          <b-button size="lg" variant="success" @click="listado = !listado">Ok</b-button>
         </div>
       </div>
     </div>

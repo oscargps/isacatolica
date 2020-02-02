@@ -1,6 +1,6 @@
 <?php
 include('conexion.php');
-//error_reporting(E_ALL ^ E_NOTICE);
+error_reporting(E_ALL ^ E_NOTICE);
 $conn = mysqli_connect($host,$user,$pw) or die("Error en la conexion al servidor");
 mysqli_select_db($conn,$db);
 if (!$conn) {
@@ -9,10 +9,11 @@ if (!$conn) {
 }
 switch ($method) {
   case 'GET':
-  $sql="SELECT estudiante.nombre,asunto,compromiso,compromiso.fecha
+  $id=$_GET['id'];
+  $sql="SELECT estudiante.nombre,asunto,compromiso,compromiso.fecha,TIME_FORMAT(compromiso.fecha,'%r'),compromiso.id
   FROM compromiso
   INNER JOIN estudiante
-  ON estudiante.id = compromiso.estudiante";
+  ON estudiante.id = compromiso.estudiante".($id?" where compromiso.id='$id'":'');
 break;
 case 'POST':
 $estudiante = $_POST['estudiante'];
@@ -35,7 +36,8 @@ if ($method == 'GET') {
         'estudiante'=>$row[0],
           'asunto'=>$row[1],
           'compromiso'=>$row[2],
-          'creado'=>$row[3]
+          'creado'=>$row[3],
+        'id'=>$row[5]
 
       );
       //echo $row[0];
